@@ -34,7 +34,7 @@ export default function Header() {
           </div>
         </div>
         
-        <div className="header_main_bottom">
+        {/* <div className="header_main_bottom">
           <ul>
             <li><CompanyLogo/></li>
             <li><CompanyLogo/></li>
@@ -43,7 +43,7 @@ export default function Header() {
             <li><CompanyLogo/></li>
             <li><CompanyLogo/></li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="circle"></div>
     </div>
