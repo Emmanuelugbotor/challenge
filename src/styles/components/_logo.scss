@@ -1,0 +1,32 @@
+.icon{
+    @include Flex();
+    & .icon_wrapper{
+        @include Flex();
+        flex-direction: column;
+        & span{
+            background: #0A2640;
+            &.one{
+                margin-bottom:.2rem;
+                height: 13.263157844543457px;
+                width: 18.024263381958008px;
+                border-radius: 0px 12.0139px 12.0139px 0px;
+            }
+            &.two{
+                height: 17.68421173095703px;
+                width: 25.90987777709961px;
+                border-radius: 0px 12.0139px 12.0139px 0px;
+            }
+    
+        
+        }
+    }
+
+& .text{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 4.325rem;
+line-height: 34px;
+color: #0A2640;
+}
+}

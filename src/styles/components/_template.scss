@@ -1,0 +1,93 @@
+.template{
+width:100%;
+background: #0A2640;
+padding:15rem 10rem 10rem 9.5rem;
+& .title_arrows{
+    @include Flex(space-between, flex-end);
+    @media screen and (max-width:1007px){
+        flex-direction: column;
+        @include Flex(stretch, stretch);
+    }
+    margin-bottom: 7.2rem;
+    h1{
+        max-width: 716px;
+        width:100%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        color: #FFFFFF;
+        @include Flex;
+        @media screen and (max-width:1007px){
+            font-size: 3.6rem;
+        }
+    }
+    & .arrows{
+        @include Flex;
+        @media screen and (max-width:1007px){
+            margin-top: 1rem;
+        }
+        & .circle_arrow{
+            width:7.2rem;
+            height:7.2rem;
+            border-radius: 50%;
+            background-color:#fff;
+            @include Flex(center, center);
+            & *{
+                font-size: 3rem;
+            }
+            &:not(:last-child){
+                margin-right: 2.8rem;
+            }
+        }
+    }
+}
+& .cards{
+    & ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap:5rem;
+        & li{
+            width:100%;
+            background-color: #fff;
+            padding:4rem 4rem 4.3rem 4rem;
+            align-self: flex-start;
+            & p{
+                font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            margin-bottom: 4rem;
+            }
+            & .thumbnail_name_position{
+                @include Flex(stretch, center);
+                & .name_position{
+                    @include Flex;
+                    flex-direction: column;
+                    margin-left: 1.6rem;
+                    & .name{
+                        font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 32px;
+                color: #0A2640;
+                    }
+                    & .position{
+                        font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 32px;
+                color: #0A2640;
+                margin-top: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+}

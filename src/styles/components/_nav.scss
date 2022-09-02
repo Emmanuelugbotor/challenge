@@ -1,0 +1,36 @@
+nav.nav{
+    @include Flex(space-between, center);
+    margin-top:5.6rem;
+    @media screen and (max-width:668px){
+        flex-direction: column;
+    }
+    & ul{
+        @include Flex(stretch, center);
+        @media screen and (max-width:668px){
+            margin-top:1rem;
+        }
+        & li{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: #0A2640;
+            &:not(:last-child){
+                margin-right:4rem;
+                @media screen and (max-width:400px){
+                    margin-right:2rem;
+                }
+            }
+            &:last-child{
+               padding:.5rem 3.5rem;
+                border:1px solid #0A2640;
+                border-radius:1rem;
+                @media screen and (max-width:400px){
+                    padding:.5rem 1.5rem;
+                }
+            }
+        }
+
+    }
+}

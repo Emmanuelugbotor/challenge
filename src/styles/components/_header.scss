@@ -1,0 +1,150 @@
+.header{
+    width:100%;
+    background: #FFFFFF;
+    padding: 0 10.47rem 8.7rem 10rem; 
+    @media screen and (max-width:807px){
+        padding: 0 4.47rem 8.7rem 4rem; 
+    }
+    & .circle{
+        clip-path: circle(50.9% at 99% 0);
+        width:100%;
+        height:100%;
+        position:absolute;
+        right:0;
+        top:0;
+        background: #F1F1F1;
+    }
+    & .main_header{
+        position:relative;
+        z-index: 1000;
+        & .header_main{
+            margin-top:6.3rem;
+            @include Flex;
+            @media screen and (max-width:1213px){
+                flex-direction: column;
+            }
+            & .left{
+                flex:0 1 55%;
+                margin-right:10.4rem;
+                margin-top:3rem;
+                @media screen and (max-width:1213px){
+                    margin-right:0rem;
+                }
+                & h1{
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 4.8rem;
+                    line-height: 72px;
+                    color: #000000;
+                    margin-bottom: 1.6rem;
+                    @media screen and (max-width:1213px){
+                        max-width: 70rem;
+                        width:100%;
+                    }
+                    @media screen and (max-width:599px){
+                        font-size: 3.5rem;
+                        text-align: center;
+                        line-height: 36px;
+                    }
+
+                }
+                & p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 28px;
+                    color: #777777;
+                    margin-bottom: 4.975rem;
+                    @media screen and (max-width:1213px){
+                        max-width: 70rem;
+                        width:100%;
+                    }
+                }
+                & .button_wrapper{
+                    @include Flex;
+                    & button{
+                        @media screen and (max-width:529px){
+                          flex:1;
+                        }
+                        &.btn{
+                            @include Flex(center, center);
+                            padding: 1.6rem 5.6rem;          
+                            border: 2px solid #0A2640;
+                            border-radius: 5.6rem;
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 2rem;
+                            line-height: 2.8rem;
+                            color: #FFFFFF;
+                            @media screen and (max-width:529px){
+                                padding: 1.6rem 1.6rem;  
+                              }
+                            &.template{
+                                width: 24.7rem;
+                                height: 6rem;
+                                background: #0A2640;
+                                margin-right: .8rem;
+                            }
+                            &.explore{
+                                color:#0A2640;
+                                background: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            & .right{
+                flex:0 1 45%;
+                @media screen and (max-width:1213px){
+                    display:none;
+                }
+                & .top{
+                    width:100%;
+                    & img{
+                        width:100%; 
+                    }
+                }
+                & .bottom{
+                    @include Flex;
+                    margin-top:2.577rem;
+                    & .second_img{
+                        flex:1;
+                        & img{
+                            width:100%;  
+                        }
+                        &:first-child{
+                            margin-right:3.8rem;
+                        }
+                    }
+                }
+            }
+           
+        }
+        & .header_main_bottom{
+            margin-top:9.5rem;
+            & ul{
+                width:100%;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                flex-wrap: nowrap;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                width:100%;
+                @include Flex(center, stretch);
+                &::-webkit-scrollbar{
+                        display:none;   
+                }
+
+                & li{
+                    &:not(:last-child){
+                        margin-right:5.6rem;
+                    }
+                  
+                }
+            }
+        }
+    }
+}
