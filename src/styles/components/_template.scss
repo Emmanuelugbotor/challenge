@@ -2,6 +2,9 @@
 width:100%;
 background: #0A2640;
 padding:15rem 10rem 10rem 9.5rem;
+@media screen and (max-width:647px){
+    padding:15rem 4rem 10rem 4rem;
+}
 & .title_arrows{
     @include Flex(space-between, flex-end);
     @media screen and (max-width:1007px){
@@ -22,11 +25,15 @@ padding:15rem 10rem 10rem 9.5rem;
         @media screen and (max-width:1007px){
             font-size: 3.6rem;
         }
+        @media screen and (max-width:647px){
+            line-height: 46px;
+
+        }
     }
     & .arrows{
         @include Flex;
         @media screen and (max-width:1007px){
-            margin-top: 1rem;
+            margin-top: 2.5rem;
         }
         & .circle_arrow{
             width:7.2rem;

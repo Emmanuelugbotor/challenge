@@ -3,6 +3,9 @@
     @media screen and (max-width:1315px){
         padding:12rem 7rem 0 7rem;
     }
+    @media screen and (max-width:723px){
+        padding:12rem 4rem 0 4rem;
+    }
     & .image_d{
         height:40.3rem;
         width:100%;
@@ -100,9 +103,16 @@
                     & .image{
                         width:100%;
                         height:20.9rem;
+                        @media screen and (max-width:796px){
+                            height:30.9rem;
+                        }
                         & img{
                             width:100%;
                             height:100%;
+                            @media screen and (max-width:796px){
+                                object-fit: cover;
+                            }
+                            
                         }
                     }
                     & .category_date{
