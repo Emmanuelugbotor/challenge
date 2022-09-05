@@ -3,18 +3,19 @@
     & .icon_wrapper{
         @include Flex();
         flex-direction: column;
+        // border:1px solid red;
         & span{
             background: #0A2640;
             &.one{
                 margin-bottom:.2rem;
-                height: 13.263157844543457px;
-                width: 18.024263381958008px;
+                height: 1.3263157844543457rem;
+                width: 1.8024263381958008rem;
                 border-radius: 0px 12.0139px 12.0139px 0px;
             }
             &.two{
-                height: 17.68421173095703px;
-                width: 25.90987777709961px;
-                border-radius: 0px 12.0139px 12.0139px 0px;
+                height: 1.768421173095703rem;
+                width: 2.590987777709961rem;
+                border-radius: 0rem 1.20139rem 1.20139rem 0rem;
             }
     
         

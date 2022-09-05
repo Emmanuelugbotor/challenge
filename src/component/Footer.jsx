@@ -129,7 +129,9 @@ export default function Footer() {
               <span>Services</span>
             </li>
             <li>
-              <CompanyLogo />
+              <div className="logo">
+                <CompanyLogo style={{ width: "1rem", height: "1rem" }} />
+              </div>
               <div className="content">
                 Social media validation business model canvas graphical user
                 interface launch party creative facebook iPad twitter.

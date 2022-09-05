@@ -126,17 +126,17 @@
         & .header_main_bottom{
             margin-top:9.5rem;
             & ul{
-                width:100%;
-                overflow-x: scroll;
-                overflow-y: hidden;
-                flex-wrap: nowrap;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-                width:100%;
-                @include Flex(center, stretch);
-                &::-webkit-scrollbar{
-                        display:none;   
+                @include Flex(stretch, center);
+                &::-webkit-scrollbar { /* WebKit */
+                    width: 0;
+                    height: 0;
                 }
+                width:100%;
+                // height: max-content;
+                overflow-X: scroll;
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                
 
                 & li{
                     &:not(:last-child){
